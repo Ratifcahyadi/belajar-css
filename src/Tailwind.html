@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Learn TailwindCSS</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="justify-content">
+        <div class="wrapper flex justify-start">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+        <div class="wrapper flex justify-center">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+        <div class="wrapper flex justify-end">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+        <div class="wrapper flex justify-between">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+        <div class="wrapper flex justify-around">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+        <div class="wrapper flex justify-evenly">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+        <div class="wrapper flex justify-normal">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+        <div class="wrapper grid grid-flow-row justify-stretch">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+        <div class="wrapper grid grid-flow-col justify-stretch">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+    </div>
+
+    <div class="justify-items">
+        <div class="wrapper grid justify-items-start">
+            <div class="box">01</div>
+        </div>
+        <div class="wrapper grid justify-items-end">
+            <div class="box">01</div>
+        </div>
+        <div class="wrapper grid justify-items-center">
+            <div class="box">01</div>
+        </div>
+        <div class="wrapper grid justify-items-stretch">
+            <div class="box">01</div>
+        </div>
+    </div>
+
+    <div class="justify-self">
+        <div class="wrapper grid grid-flow-col justify-items-stretch">
+            <div class="box">01</div>
+            <div class="box justify-self-auto">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+        <div class="wrapper grid grid-flow-col justify-items-stretch">
+            <div class="box">01</div>
+            <div class="box justify-self-start">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+        <div class="wrapper grid grid-flow-col justify-items-stretch">
+            <div class="box">01</div>
+            <div class="box justify-self-center">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+        <div class="wrapper grid grid-flow-col justify-items-stretch">
+            <div class="box">01</div>
+            <div class="box justify-self-end">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+        <div class="wrapper grid grid-flow-col justify-items-start">
+            <div class="box">01</div>
+            <div class="box justify-self-stretch">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+    </div>
+
+    <div class="align-content">
+        <div class="wrapper h-56 grid grid-cols-3 gap-4 content-start">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+        <div class="wrapper h-56 grid grid-cols-3 gap-4 content-center">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+        <div class="wrapper h-56 grid grid-cols-3 gap-4 content-end">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+        </div>
+        <div class="wrapper h-56 grid grid-cols-3 gap-4 content-between">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+        <div class="wrapper h-56 grid grid-cols-3 gap-4 content-around">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+        <div class="wrapper h-56 grid grid-cols-3  content-evenly">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+        <div class="wrapper h-56 grid grid-cols-3 content-stretch">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+        <div class="wrapper h-56 grid grid-cols-3 content-normal">
+            <div class="box">01</div>
+            <div class="box items-center">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+    </div>
+
+    <div class="align-items">
+        <div class="wrapper h-36 flex items-stretch">
+            <div class="boxes py-4">01</div>
+            <div class="boxes py-12">02</div>
+            <div class="boxes py-8">03</div>
+        </div>
+        <div class="wrapper h-36 flex items-start">
+            <div class="boxes py-4">01</div>
+            <div class="boxes py-12">02</div>
+            <div class="boxes py-8">03</div>
+        </div>
+        <div class="wrapper h-36 flex items-center">
+            <div class="boxes py-4">01</div>
+            <div class="boxes py-12">02</div>
+            <div class="boxes py-8">03</div>
+        </div>
+        <div class="wrapper h-36 flex items-end">
+            <div class="boxes py-4">01</div>
+            <div class="boxes py-12">02</div>
+            <div class="boxes py-8">03</div>
+        </div>
+        <div class="wrapper h-36 flex items-baseline">
+            <div class="boxes py-4">01</div>
+            <div class="boxes py-12">02</div>
+            <div class="boxes py-8">03</div>
+        </div>
+    </div>
+
+    <div class="align-self">
+        <div class="wrapper flex h-12 items-stretch">
+            <div class="boxes">01</div>
+            <div class="boxes self-auto">02</div>
+            <div class="boxes">03</div>
+        </div>
+        <div class="wrapper flex h-12 items-stretch">
+            <div class="boxes">01</div>
+            <div class="boxes self-start">02</div>
+            <div class="boxes">03</div>
+        </div>
+        <div class="wrapper flex h-12 items-stretch">
+            <div class="boxes">01</div>
+            <div class="boxes self-end">02</div>
+            <div class="boxes">03</div>
+        </div>
+        <div class="wrapper flex h-12 items-stretch">
+            <div class="boxes">01</div>
+            <div class="boxes self-stretch">02</div>
+            <div class="boxes">03</div>
+        </div>
+    </div>
+
+    <div class="place-contents w-96">
+        <div class="wrapper grid grid-cols-2 gap-4 place-content-center h-48 w-fit">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+        <div class="wrapper grid grid-cols-2 gap-4 place-content-start h-48 w-fit">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+        <div class="wrapper grid grid-cols-2 gap-4 place-content-end h-48 w-fit">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+        <div class="wrapper grid grid-cols-2 gap-4 place-content-between h-48 w-fit">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+        <div class="wrapper grid grid-cols-2 gap-4 place-content-around h-48 w-fit">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+        <div class="wrapper grid grid-cols-2 gap-4 place-content-evenly h-48 w-fit">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+        <div class="wrapper grid grid-cols-2 gap-4 place-content-stretch h-48 w-fit">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+    </div>
+
+    <div class="item-center">
+        <div class="wrapper grid grid-cols-3 gap-4 place-items-start h-56">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+        <div class="wrapper grid grid-cols-3 gap-4 place-items-center h-56">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+        <div class="wrapper grid grid-cols-3 gap-4 place-items-end h-56">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+        <div class="wrapper grid grid-cols-3 gap-4 place-items-stretch h-56">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+    </div>
+
+    <div class="plcae-self">
+        <div class="wrapper grid grid-cols-3 gap-4 h-fit">
+            <div class="box">01</div>
+            <div class="box place-self-auto">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+        <div class="wrapper grid grid-cols-3 gap-4 h-fit">
+            <div class="box">01</div>
+            <div class="box place-self-start">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+        <div class="wrapper grid grid-cols-3 gap-4 h-fit">
+            <div class="box">01</div>
+            <div class="box place-self-end">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+        <div class="wrapper grid grid-cols-3 gap-4 h-fit">
+            <div class="box">01</div>
+            <div class="box place-self-center">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+        <div class="wrapper grid grid-cols-3 gap-4 h-fit">
+            <div class="box">01</div>
+            <div class="box place-self-stretch">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+    </div>
+</body>
+
+</html>
