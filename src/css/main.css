@@ -2,22 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-.box {
-    @apply p-4 flex justify-center gap-2 rounded-md bg-purple-400;
-}
+/* *,
+*::before,
+*::after,
+html, body {
+    @apply box-border p-0 m-0;
+} */
 
-.boxes {
-    @apply w-full flex justify-center gap-2 rounded-md bg-purple-400;
-}
+@layer components {
+    .flex, .grid {
+        @apply gap-2;
+    }
 
-.wrapper {
-    @apply gap-4 odd: bg-slate-200 even:bg-indigo-200 m-2;
-}
+    .box {
+        @apply p-4 flex justify-center gap-2 rounded-md bg-purple-400;
+    }
 
-.wrapper:nth-child(even) .box {
-    @apply bg-blue-500;
-}
+    .boxes {
+        @apply w-full py-2 flex justify-center gap-2 rounded-md bg-purple-400;
+    }
 
-.wrapper:nth-child(even) .boxes {
-    @apply bg-blue-500;
+    .wrapper {
+        @apply gap-4 odd:bg-slate-200 even:bg-indigo-200 mx-2;
+    }
+
+    .wrapper:nth-child(odd) h2 {
+        @apply text-purple-500 px-2 py-1;
+    }
+
+    .wrapper:nth-child(even) h2 {
+        @apply text-indigo-500 px-2 py-1;
+    }
+
+    .wrapper:nth-child(even) .box {
+        @apply bg-blue-500;
+    }
+
+    .wrapper:nth-child(even) .boxes {
+        @apply bg-blue-500;
+    }
 }

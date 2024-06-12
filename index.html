@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn TailwindCSS</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+</head>
+
+<body>
+    <h1 class="text-2xl text-blue-500 text-center">Display's</h1>
+
+
+    <div class="justify-self">
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid justify-self-auto</h2>
+            <div class="grid grid-flow-col justify-items-stretch">
+                <div class="box">01</div>
+                <div class="box justify-self-auto">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid justify-self-start</h2>
+            <div class="grid grid-flow-col justify-items-stretch">
+                <div class="box">01</div>
+                <div class="box justify-self-start">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid justify-self-center</h2>
+            <div class="grid grid-flow-col justify-items-stretch">
+                <div class="box">01</div>
+                <div class="box justify-self-center">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid justify-self-end</h2>
+            <div class="grid grid-flow-col justify-items-stretch">
+                <div class="box">01</div>
+                <div class="box justify-self-end">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid justify-self-stretch</h2>
+            <div class="grid grid-flow-col justify-items-start">
+                <div class="box">01</div>
+                <div class="box justify-self-stretch">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="align-content">
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid content-start</h2>
+            <div class="h-56 grid grid-cols-3 gap-4 content-start">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid content-center</h2>
+            <div class="h-56 grid grid-cols-3 gap-4 content-center">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid content-end</h2>
+            <div class="h-56 grid grid-cols-3 gap-4 content-end">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid content-between</h2>
+            <div class="h-56 grid grid-cols-3 gap-4 content-between">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid content-around</h2>
+            <div class="h-56 grid grid-cols-3 gap-4 content-around">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid content-evenly</h2>
+            <div class="h-56 grid grid-cols-3 content-evenly">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid content-stretch</h2>
+            <div class="h-56 grid grid-cols-3 content-stretch">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid content-normal</h2>
+            <div class="h-56 grid grid-cols-3 content-normal">
+                <div class="box">01</div>
+                <div class="box items-center">02 *item-center</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="align-items">
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">flex items-stretch</h2>
+            <div class="h-36 flex items-stretch">
+                <div class="boxes py-4">01</div>
+                <div class="boxes py-12">02</div>
+                <div class="boxes py-8">03</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">flex items-start</h2>
+            <div class="h-36 flex items-start">
+                <div class="boxes py-4">01</div>
+                <div class="boxes py-12">02</div>
+                <div class="boxes py-8">03</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">flex items-center</h2>
+            <div class="h-36 flex items-center">
+                <div class="boxes py-4">01</div>
+                <div class="boxes py-12">02</div>
+                <div class="boxes py-8">03</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">flex items-end</h2>
+            <div class="h-36 flex items-end">
+                <div class="boxes py-4">01</div>
+                <div class="boxes py-12">02</div>
+                <div class="boxes py-8">03</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">flex items-baseline</h2>
+            <div class="h-36 flex items-baseline">
+                <div class="boxes py-4">01</div>
+                <div class="boxes py-12">02</div>
+                <div class="boxes py-8">03</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="align-self">
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">flex self-auto</h2>
+            <div class="flex h-36 items-stretch">
+                <div class="boxes">01</div>
+                <div class="boxes self-auto">02</div>
+                <div class="boxes">03</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">flex self-start</h2>
+            <div class="flex h-36 items-stretch">
+                <div class="boxes">01</div>
+                <div class="boxes self-start">02</div>
+                <div class="boxes">03</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">flex self-end</h2>
+            <div class="flex h-36 items-stretch">
+                <div class="boxes">01</div>
+                <div class="boxes self-end">02</div>
+                <div class="boxes">03</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">flex self-stretch</h2>
+            <div class="flex h-36 items-stretch">
+                <div class="boxes">01</div>
+                <div class="boxes self-stretch">02</div>
+                <div class="boxes">03</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="place-contents w-96">
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-content-center</h2>
+            <div class="grid grid-cols-2 gap-4 place-content-center h-56 w-fit">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-content-start</h2>
+            <div class="grid grid-cols-2 gap-4 place-content-start h-56 w-fit">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-content-end</h2>
+            <div class="grid grid-cols-2 gap-4 place-content-end h-56 w-fit">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-content-between</h2>
+            <div class="grid grid-cols-2 gap-4 place-content-between h-56 w-fit">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-content-around</h2>
+            <div class="grid grid-cols-2 gap-4 place-content-around h-56 w-fit">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-content-evenly</h2>
+            <div class="grid grid-cols-2 gap-4 place-content-evenly h-56 w-fit">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-content-stretch</h2>
+            <div class="grid grid-cols-2 gap-4 place-content-stretch h-56 w-fit">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item-center">
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-items-start</h2>
+            <div class="grid grid-cols-3 gap-4 place-items-start h-56">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-items-center</h2>
+            <div class="grid grid-cols-3 gap-4 place-items-center h-56">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-items-end</h2>
+            <div class="grid grid-cols-3 gap-4 place-items-end h-56">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-items-stretch</h2>
+            <div class="grid grid-cols-3 gap-4 place-items-stretch h-56">
+                <div class="box">01</div>
+                <div class="box">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="plcae-self">
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-self-auto</h2>
+            <div class="grid grid-cols-3 gap-4 h-fit">
+                <div class="box">01</div>
+                <div class="box place-self-auto">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-self-start</h2>
+            <div class="grid grid-cols-3 gap-4 h-fit">
+                <div class="box">01</div>
+                <div class="box place-self-start">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-self-end</h2>
+            <div class="grid grid-cols-3 gap-4 h-fit">
+                <div class="box">01</div>
+                <div class="box place-self-end">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-self-center</h2>
+            <div class="grid grid-cols-3 gap-4 h-fit">
+                <div class="box">01</div>
+                <div class="box place-self-center">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h2 class="font-semibold mt-4">grid place-self-stretch</h2>
+            <div class="grid grid-cols-3 gap-4 h-fit">
+                <div class="box">01</div>
+                <div class="box place-self-stretch">02</div>
+                <div class="box">03</div>
+                <div class="box">04</div>
+                <div class="box">05</div>
+                <div class="box">06</div>
+            </div>
+        </div>
+    </div>
+    <script type="module"  src="./main.js"></script>
+</body>
+
+</html>
