@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/SignUpForm.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="card">
+            <h2>Sign Up</h2>
+            <h3>Enter Your credentials</h3>
+            <form class="form">
+                <div class="input-wrapper">
+                    <input id="email" type="email" placeholder="email" class="control" autocomplete="email">
+                    <input oninput="handleChange()" id="password" type="password" placeholder="password" autocomplete="current-password" class="control">
+                </div>
+                <div id="bars">
+                    <div></div>
+                </div>
+                <div id="strength" class="strength"></div>
+                <span class="requiredPass"></span>
+                <button class="control">Continue</button>
+            </form>
+        </div>
+    <script>
+        // ES6
+        const bars = document.querySelector("#bars"),
+            strengthDiv = document.querySelector("#strength"),
+            strengthSpan = document.querySelector(".requiredPass"),
+            passwordInput = document.querySelector("#password");
+
+        const strength = {
+            1: "weak",
+            2: "medium",
+            3: "strong"
+        };
+
+        const getIndicator = (password, strengthValue) => {
+            strengthValue.upper = /[A-Z]/.test(password);
+            strengthValue.lower = /[a-z]/.test(password);
+            strengthValue.numbers = /\d/.test(password);
+
+            let strengthIndicator = 0;
+
+            for (let metric in strengthValue) {
+                if (strengthValue[metric] === true) {
+                    strengthIndicator++;
+                }
+            }
+
+            return strength[strengthIndicator] ?? "";
+        };
+
+        const getStrength = (password) => {
+            let strengthValue = {
+                upper: false,
+                lower: false,
+                numbers: false
+            }
+
+            return getIndicator(password, strengthValue);
+        };
+
+        const handleChange = () => {
+            let {value: password} = passwordInput;
+
+            console.log(password);
+
+            const strengthText = getStrength(password);
+
+            bars.classList = "";
+
+            if (strengthText) {
+                strengthDiv.innerText = `${strengthText} Password`;
+                bars.classList.add(strengthText);
+            } else {
+                strengthDiv.innerText = "";
+            }
+
+            if (strengthText === "weak") {
+                strengthSpan.innerText = "Add a Number or Different Capitalize";
+                strengthDiv.classList.add("weak");
+                strengthDiv.classList.remove("medium");
+                strengthDiv.classList.remove("strong");
+            }
+            if (strengthText === "medium") {
+                strengthSpan.innerText = "Add a Number or Different Capitalize";
+                strengthDiv.classList.add("medium");
+                strengthDiv.classList.remove("weak");
+                strengthDiv.classList.remove("strong");
+            }
+            if (strengthText === "strong") {
+                strengthSpan.innerText = ""
+                strengthDiv.classList.add("strong");
+                strengthDiv.classList.remove("weak");
+                strengthDiv.classList.remove("medium");
+            }
+            
+            // if (password === /[A-Z]/ && password === /[a-z]/) {
+            //     strengthSpan.innerText = "Add a Number";
+            // }
+        };
+
+    </script>
+    </body>
+</html>
